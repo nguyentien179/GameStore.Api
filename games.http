@@ -1,0 +1,32 @@
+GET http://localhost:5194/games
+
+###
+
+GET http://localhost:5194/games/find-by-id/2
+
+###
+
+POST http://localhost:5194/games/create
+Content-Type: application/json
+
+{
+    "name": "Minecraft 2",
+    "genreId": 3,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+
+PUT http://localhost:5194/games/update/2
+Content-Type: application/json
+
+{
+    "name": "Minecraft 3",
+    "genreId": 3,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+DELETE http://localhost:5194/games/delete/2
